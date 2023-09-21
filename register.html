@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css/register.css">
+    
+</head>
+<body>
+    <div class="page">
+    <h1 class="reg">Register Form</h1>
+     <form id="registerform">
+        <div>
+            <label class="qun">Enter New User</label>
+            <br>
+            <input type="text" placeholder="Enter New User" id="uname" class="name" required>
+        </div>
+        <br>
+        <div>
+        <label class="qun"> Enter New Password</label>
+        <br>
+        <input type="text" placeholder="Enter New Password" id="password" class="name" required>
+        </div>
+        <br>
+        <div>
+        <label class="qun">enter your Email Id</label>
+        <br>
+        <input type="email" placeholder="enter your Email Id" id="emailid" class="name" required>
+    </div>
+        <br>
+
+        <input type="submit" value="register" class="button">
+        &nbsp;&nbsp;
+        <input type="reset" value="Reset" class="button">
+       </form>
+     </div>
+    </body>
+    <script>
+        document.getElementById("registerform").addEventListener("submit",function(event)
+        {
+            event.preventDefault()
+            var uname = document.getElementById("uname").value;
+            var password =document.getElementById("password").value;
+            var emailid=document.getElementById("emailid").value;
+
+            localStorage.setItem("uname",uname)
+            localStorage.setItem("password",password)
+            localStorage.setItem("emailid",emailid)
+
+            window.location.href ="login.html"
+        })
+    </script>
+    
+</body>
+</html>

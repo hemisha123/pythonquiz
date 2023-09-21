@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/python.css">
+    
+    <title>python</title>
+</head>
+<body>
+    <h1 class="h11">Python Quiz</h1>
+    <div class="input">
+    <label class="qun"> Q.1 Who developed Python Programming Language?</label>
+    <br>
+        <input type="radio" name="q1" id="q1 Wick van Rossum"  class="radio">
+        <label for="q1 Wick van Rossum" class="option"> a. Wick van Rossum</label>
+    <br>
+   
+    <input type="radio" name="q1" id="q1Rasmus Lerdorf" class="radio">
+    <label for="q1Rasmus Lerdorf" class="option"> b.Rasmus Lerdorf</label>
+    
+    <br>
+    <input type="radio" name="q1" id="q1Guido van Rossum" class="radio">
+    <label for="q1Guido van Rossum" class="option"> c.Guido van Rossum</label>
+    <br>
+    <input type="radio" name="q1" id="q1Niene Stom" class="radio">
+    <label for="q1Niene Stom" class="option"> d.Niene Stom</label>
+    </div>
+    <br><br>
+    <div class="input">
+    <label class="qun"> Q.2 python is non-case-sensitive language?</label>
+    <br>
+    <input type="radio" name="q2" id="q2true" class="radio">
+    <label for="q2true" class="option"> True</label>
+    <br>
+    <input type="radio" name="q2" id="q2false" class="radio">
+    <label for="q2false" class="option"> False</label>
+    </div>
+    <br><br>
+    <div class="input">
+    <label class="qun"> Q.3 Which type of Programming does Python support?</label>
+    <br>
+    <input type="radio" name="q3" id="q3a" class="radio">
+    <label for="q3a" class="option"> a. object-oriented programming
+    </label>
+    <br>
+    <input type="radio" name="q3" id="q3b" class="radio">
+    <label for="q3b" class="option"> b. structured programming</label>
+    <br>
+    <input type="radio" name="q3" id="q3c" class="radio">
+    <label for="q3c" class="option"> c.functional programming</label>
+    <br>
+    <input type="radio" name="q3" id="q3d" class="radio">
+    <label for="q3d" class="option"> d.all of the mentioned</label>
+    </div>
+    <br><br>
+    <div class="input">
+    <label class="qun">q.4 Which of the following is the correct extension of the Python file?</label>
+    <br>
+    <input type="radio" name="q4" id="q4a" class="radio">
+    <label for="q4a" class="option">a..py</label>
+    <br>
+    <input type="radio" name="q4" id="q4b" class="radio" >
+    <label for="q4b" class="option">b py</label>
+    <br>
+    <input type="radio" name="q4" id="q4c" class="radio">
+    <label for="q4c" class="option"> c p</label>
+    <br>
+    <input type="radio" name="q4" id="q4d" class="radio">
+    <label for="q4d" class="option">d .python</label>
+    </div>
+    <br><br>
+    <div class="input">
+    <label class="qun">q.5 All keywords in Python are in _________</label>
+    <br>
+    <input type="radio" name="q5" id="q5a" class="radio">
+    <label for="q5a" class="option">a.Capitalized</label>
+    <br>
+    <input type="radio" name="q5" id="q5b" class="radio">
+    <label for="q5b" class="option">b.  lower case</label>
+    <br>
+    <input type="radio" name="q5" id="q5c" class="radio">
+    <label for="q5c" class="option"> c. UPPER CASE</label>
+    <br>
+    <input type="radio" name="q5" id="q5d" class="radio">
+    <label for="q5d" class="option">d.None of the mentioned</label>
+    </div>
+    <br><br>
+    <div class="input">
+    <label class="qun">Q.6  Which of the following is used to define a block of code in Python language?</label>
+    <br>
+    <input type="radio" name="q6" id="q6a" class="radio">
+    <label for="q6a" class="option">a.Indentation</label>
+    <br>
+    <input type="radio" name="q5" id="q6b" class="radio">
+    <label for="q6b" class="option">b.key </label>
+    <br>
+    <input type="radio" name="q6" id="q6c" class="radio">
+    <label for="q6c" class="option"> c. Brackets</label>
+    <br>
+    <input type="radio" name="q6" id="q6d" class="radio">
+    <label for="q6d" class="option">d. All of the mentioned</label>
+    </div>
+    <br><br>
+
+    <input type="button" value="submit" onclick="calculatescore()" class="button">
+    &nbsp;&nbsp;
+    <input type="button" value="cancel" onclick="cancel()" class="button">
+    <p id="result" class="result"></p>
+
+    <script>
+        function cancel(){
+            window.location.href = "login.html"
+        }
+        function calculatescore(){
+            total=0
+            var q1value=document.getElementById("q1Guido van Rossum").checked;
+            var q2value=document.getElementById("q2false").checked;
+            var q3value=document.getElementById("q3d").checked;
+            var q4value=document.getElementById("q4a").checked;
+            var q5value=document.getElementById("q5d").checked;
+            var q6value=document.getElementById("q6d").checked;
+            if(q1value){
+                total=total+1
+            }
+            if(q2value){
+                total=total+1
+            }
+            if(q3value){
+                total=total+1
+            }
+            if(q4value){
+                total=total+1
+            }
+            if(q5value){
+                total=total+1
+            }
+            if(q6value){
+                total=total+1
+            }
+            document.getElementById("result").innerHTML="YOUR SCORE="+total
+        }
+    </script>
+
+</body>
+</html>

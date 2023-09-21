@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/login.css">
+    <title>login page</title>
+</head>
+<body>
+    <div class="page">
+    <img src="./image/login.jpg" alt="login" width="80px">
+    <h1 class="login">login Form</h1>
+    <form id="loginform">
+        <input type="text" placeholder="Enter User" id="loginname" class="name" required>
+        <br><br>
+        
+        <input type="text" placeholder="Enter Password" id="loginpassword" class="name" required>
+        <br><br>
+        <input type="submit" value="login" class="button">
+        &nbsp;&nbsp;
+        <input type="reset" value="Reset" class="button">
+        <footer class="footer">Don't an account?</footer>
+    </form>
+    </div>
+    <script>
+        document.getElementById("loginform").addEventListener("submit",function(event){
+            event.preventDefault()
+            var entername = document.getElementById("loginname").value;
+            var enterpassword =document.getElementById("loginpassword").value;
+
+            var storedname=localStorage.getItem("uname")
+            var storedpassword=localStorage.getItem("password")
+
+            if(entername===storedname && enterpassword===storedpassword){
+              alert("login successfully")
+              window.location.href ="python Exam.html"
+            }
+            else{
+                alert("login failed")
+            }
+        })
+    </script>
+    
+</body>
+</html>

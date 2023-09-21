@@ -1,0 +1,50 @@
+body{
+    background-image: url("/image/python\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.h11{
+    background-color: rgb(208, 181, 233);
+    text-align: center;
+    height: 50px;
+    border-width: 4px;
+    border-color: rgb(135, 64, 64);
+    border-style: solid;
+    border-radius: 20px;
+    
+}
+.input{
+    background-color: rgba(159, 84, 98, 0.581);
+    height: 100px;
+    width: 650px;
+    border: 3px solid rgb(207, 36, 53);
+    
+}
+.qun{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+.option{
+        color: rgb(3, 3, 17);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.radio{
+    accent-color: blue;
+}
+.button{
+    
+    background-color: #110b18;
+    padding :20px;
+    width: 200px;
+    color:#23c620;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration-line: underline;
+}
+.result{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
